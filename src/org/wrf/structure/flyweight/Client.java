@@ -1,0 +1,17 @@
+package org.wrf.structure.flyweight;
+
+/**
+ * @program: design_model
+ * @description:
+ * @author: Wang.Rongfu
+ * @create: 2020-06-26 22:42
+ **/
+public class Client {
+    public static void main(String[] args) {
+        FlyweightFactory factory = new FlyweightFactory();
+        Flyweight flyweight1 = factory.getFlyweight("aa");
+        Flyweight flyweight2 = factory.getFlyweight("aa");
+        flyweight1.doOperation("x");
+        flyweight2.doOperation("y");
+    }
+}
